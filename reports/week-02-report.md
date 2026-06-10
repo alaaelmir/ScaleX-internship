@@ -46,12 +46,13 @@ During Week 2, I focused on backend development using Django and Django REST Fra
 | /hello/ | GET | Test API |
 | /register/ | POST | User Registration |
 | /login/ | POST | User Authentication |
+| /chat/ | POST | Chat Message Processing |
 
 ---
 
 ## Testing and Verification
 
-The APIs were tested using Django REST Framework's Browsable API interface. User creation was verified through the Django Administration Panel, confirming successful database integration.
+The APIs were tested using Django REST Framework's Browsable API interface. User creation was verified through the Django Administration Panel, confirming successful database integration. All endpoints returned proper JSON responses and successfully handled both valid and test requests.
 
 ---
 
@@ -68,6 +69,8 @@ The screenshots cover the following aspects:
 - **Django Administration Login Page** – Backend management interface access
 - **Django Administration Dashboard** – Overview of available models and management features
 - **User Verification in Database** – Confirmation that registered users are properly stored in the database
+- **Chat API Endpoint Request** – Demonstration of the chat endpoint accepting POST requests with JSON message payload
+- **Chat API Endpoint Response** – Confirmation of successful chat message processing and response generation
 
 ### Detailed Screenshots
 
@@ -124,6 +127,44 @@ This screenshot shows the Django Administration dashboard overview, displaying t
 ![Users List in Admin Dashboard](../screenshots/users-list.png)
 
 This screenshot provides confirmation that registered users are properly stored in the database, showing the user list in the Django Administration panel with verified user account records.
+
+---
+
+## Additional Progress: Chat API Endpoint
+
+As part of Phase 3 preparation, a new Chat API endpoint was implemented to support conversational features in the backend. This endpoint serves as the foundation for future integration with OpenAI API and advanced message processing capabilities.
+
+### Endpoint Details
+
+**Endpoint:** `/chat/`
+
+**Method:** `POST`
+
+**Purpose:** Process chat messages and return generated responses
+
+### Request Format
+
+The endpoint accepts POST requests with a JSON message payload:
+
+```json
+{
+    "message": "Backend connection test"
+}
+```
+
+### Response Format
+
+Successful requests return a JSON response containing the processed message:
+
+```json
+{
+    "reply": "Message received: Backend connection test"
+}
+```
+
+### Testing
+
+The Chat API endpoint was tested using the Django REST Framework Browsable API interface. Requests with various message inputs were successfully processed, and responses were properly formatted in JSON. Screenshots demonstrating the chat endpoint request form and successful response validation have been added to the screenshots folder, confirming proper endpoint functionality and message handling.
 
 ---
 

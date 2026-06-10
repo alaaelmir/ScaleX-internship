@@ -43,18 +43,41 @@ The internship focuses on developing the skills required to build full-stack AI-
 - Performed migrations
 - Configured and used Django Admin
 
+### Week 2
+
+#### Backend Development
+
+**Implemented Backend Features:**
+- Hello API
+- User Registration API
+- User Login API
+- Chat API
+
+Built a complete Django REST Framework backend with user authentication and the initial Chat API endpoint for Phase 3 preparation.
+
 ## Weekly Reports
 
 - [Week 1 Report](reports/week-01-report.md)
 
+## Project Status
+
+**Phase 2 (Django Backend Development):** ✓ Completed
+- Successfully implemented core authentication and API endpoints
+- User registration and login functionality operational
+- Basic API testing verified through Django REST Framework Browsable API
+
+**Phase 3 (Backend API Preparation):** In Progress
+- Chat API endpoint implemented and tested
+- Foundation established for advanced conversational features
+
 ## Next Milestones
 
-- Complete Django REST Framework Quickstart
-- Implement authentication APIs
-- Build CRUD API endpoints
+- Integrate OpenAI API with Chat endpoint
+- Implement message history and conversation management
+- Build advanced CRUD API endpoints
 - Connect Flutter applications to Django APIs
-- Integrate OpenAI APIs
-- Begin LangGraph workflow development
+- Begin LangGraph workflow integration
+- Implement token-based authentication (JWT)
 
 ---
 
