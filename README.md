@@ -16,8 +16,7 @@ The internship focuses on developing the skills required to build full-stack AI-
 
 ```text
 .
-├── mysite/                 # Django learning projects
-├── reports/                # Weekly internship reports
+├── reports/
 │   └── week-01-report.md
 └── README.md
 ```
