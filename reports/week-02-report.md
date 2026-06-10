@@ -57,52 +57,19 @@ The APIs were tested using Django REST Framework's Browsable API interface. User
 
 ## Screenshots
 
-### Figure 1: Hello API Endpoint
-![Hello API](../screenshots/hello-api.png)
+Throughout the implementation and testing phase, comprehensive screenshots were captured to document the functionality of the Django backend project. These screenshots provide visual evidence of the successful development of all API endpoints and database integration features.
 
-This screenshot demonstrates the successful operation of the Django REST Framework test endpoint (/hello/), returning a JSON response.
+The screenshots cover the following aspects:
 
----
+- **Hello API Endpoint Response** – Demonstration of the test endpoint returning a successful JSON response
+- **User Registration Request** – API testing through the Django REST Framework Browsable API interface
+- **Successful User Registration** – Confirmation of user account creation through the registration endpoint
+- **User Login Endpoint** – Display of the authentication endpoint configuration
+- **Django Administration Login Page** – Backend management interface access
+- **Django Administration Dashboard** – Overview of available models and management features
+- **User Verification in Database** – Confirmation that registered users are properly stored in the database
 
-### Figure 2: User Registration Request
-![Registration Request](../screenshots/register-request.png)
-
-Testing the user registration endpoint by submitting username and password data through the Django REST Framework Browsable API.
-
----
-
-### Figure 3: User Registration Success
-![Registration Success](../screenshots/register-success.png)
-
-Successful registration of a new user account through the registration API endpoint.
-
----
-
-### Figure 4: User Login Endpoint
-![Login Endpoint](../screenshots/login-endpoint.png)
-
-User authentication endpoint configured to accept login credentials via POST requests.
-
----
-
-### Figure 5: Django Administration Login Page
-![Admin Login](../screenshots/admin-login.png)
-
-Django Administration login interface used to access backend management features.
-
----
-
-### Figure 6: Django Administration Dashboard
-![Admin Dashboard](../screenshots/admin-dashboard.png)
-
-Main Django Administration dashboard displaying available models and management options.
-
----
-
-### Figure 7: User Verification in Database
-![Users List](../screenshots/users-list.png)
-
-Verification that the user created through the registration API was successfully stored in the database and appears in the Django Administration panel.
+All screenshots are available in the `screenshots` folder of this GitHub repository for detailed review.
 
 ---
 
