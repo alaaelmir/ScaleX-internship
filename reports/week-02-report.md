@@ -69,7 +69,61 @@ The screenshots cover the following aspects:
 - **Django Administration Dashboard** – Overview of available models and management features
 - **User Verification in Database** – Confirmation that registered users are properly stored in the database
 
-All screenshots are available in the `screenshots` folder of this GitHub repository for detailed review.
+### Detailed Screenshots
+
+**Figure 1: Hello API Endpoint Response**
+
+![Hello API Test Endpoint](../screenshots/hello-api1.png)
+
+This screenshot demonstrates the test `/hello/` endpoint returning a successful JSON response through the Django REST Framework Browsable API interface, confirming proper API configuration and response formatting.
+
+---
+
+**Figure 2: User Registration Request**
+
+![User Registration Request Form](../screenshots/register-request.png)
+
+This screenshot shows the registration endpoint form in the Django REST Framework Browsable API, displaying the interface for submitting user registration requests with required fields for account creation.
+
+---
+
+**Figure 3: Successful User Registration**
+
+![Successful User Registration Response](../screenshots/register-success.png)
+
+This screenshot confirms the successful creation of a new user account through the registration endpoint, displaying the API response that validates successful user data processing and database storage.
+
+---
+
+**Figure 4: User Login Endpoint**
+
+![User Login Endpoint Configuration](../screenshots/login-endpoint.png)
+
+This screenshot presents the login endpoint interface, demonstrating the authentication system's availability and proper configuration within the Django REST Framework Browsable API.
+
+---
+
+**Figure 5: Django Administration Login Page**
+
+![Django Admin Login Interface](../screenshots/admin-login.png)
+
+This screenshot displays the Django Administration panel login page, providing access to the backend management interface where user accounts and database records can be verified and managed.
+
+---
+
+**Figure 6: Django Administration Dashboard**
+
+![Django Admin Dashboard](../screenshots/admin-dashboard.png)
+
+This screenshot shows the Django Administration dashboard overview, displaying the available models and management features, confirming proper Django setup and database integration.
+
+---
+
+**Figure 7: User Verification in Database**
+
+![Users List in Admin Dashboard](../screenshots/users-list.png)
+
+This screenshot provides confirmation that registered users are properly stored in the database, showing the user list in the Django Administration panel with verified user account records.
 
 ---
 
