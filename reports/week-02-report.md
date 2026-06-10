@@ -58,49 +58,49 @@ The APIs were tested using Django REST Framework's Browsable API interface. User
 ## Screenshots
 
 ### Figure 1: Hello API Endpoint
-![Hello API](screenshots/hello-api.png)
+![Hello API](../screenshots/hello-api.png)
 
 This screenshot demonstrates the successful operation of the Django REST Framework test endpoint (/hello/), returning a JSON response.
 
 ---
 
 ### Figure 2: User Registration Request
-![Registration Request](screenshots/register-request.png)
+![Registration Request](../screenshots/register-request.png)
 
 Testing the user registration endpoint by submitting username and password data through the Django REST Framework Browsable API.
 
 ---
 
 ### Figure 3: User Registration Success
-![Registration Success](screenshots/register-success.png)
+![Registration Success](../screenshots/register-success.png)
 
 Successful registration of a new user account through the registration API endpoint.
 
 ---
 
 ### Figure 4: User Login Endpoint
-![Login Endpoint](screenshots/login-endpoint.png)
+![Login Endpoint](../screenshots/login-endpoint.png)
 
 User authentication endpoint configured to accept login credentials via POST requests.
 
 ---
 
 ### Figure 5: Django Administration Login Page
-![Admin Login](screenshots/admin-login.png)
+![Admin Login](../screenshots/admin-login.png)
 
 Django Administration login interface used to access backend management features.
 
 ---
 
 ### Figure 6: Django Administration Dashboard
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Dashboard](../screenshots/admin-dashboard.png)
 
 Main Django Administration dashboard displaying available models and management options.
 
 ---
 
 ### Figure 7: User Verification in Database
-![Users List](screenshots/users-list.png)
+![Users List](../screenshots/users-list.png)
 
 Verification that the user created through the registration API was successfully stored in the database and appears in the Django Administration panel.
 
