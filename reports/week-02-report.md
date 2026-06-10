@@ -130,6 +130,22 @@ This screenshot provides confirmation that registered users are properly stored 
 
 ---
 
+**Figure 8: Chat API Request**
+
+![Chat API Request Payload](../screenshots/chat-request.png)
+
+This screenshot demonstrates testing the Chat API endpoint by sending a POST request containing a JSON message payload.
+
+---
+
+**Figure 9: Chat API Response**
+
+![Chat API Response](../screenshots/chat-response.png)
+
+This screenshot demonstrates the successful processing of a chat message by the backend and the JSON response returned by the Chat API endpoint.
+
+---
+
 ## Additional Progress: Chat API Endpoint
 
 As part of Phase 3 preparation, a new Chat API endpoint was implemented to support conversational features in the backend. This endpoint serves as the foundation for future integration with OpenAI API and advanced message processing capabilities.
