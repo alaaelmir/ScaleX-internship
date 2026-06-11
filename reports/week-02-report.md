@@ -243,85 +243,9 @@ The foundation is now solid for scaling and adding advanced features to the AI C
 
 ## 9. Screenshots and Demonstrations
 
-### 9.1 Backend API Development
+### 9.1 Frontend User Interface Development
 
-**Figure 1: Hello API Endpoint**
-
-![Hello API Test Endpoint](../screenshots/hello-api1.png)
-
-This screenshot demonstrates the test `/hello/` endpoint returning a successful JSON response through the Django REST Framework Browsable API interface, confirming proper API configuration and response formatting.
-
----
-
-**Figure 2: User Registration Request**
-
-![User Registration Request Form](../screenshots/register-request.png)
-
-This screenshot shows the registration endpoint form in the Django REST Framework Browsable API, displaying the interface for submitting user registration requests with required fields for account creation.
-
----
-
-**Figure 3: Successful User Registration**
-
-![Successful User Registration Response](../screenshots/register-success.png)
-
-This screenshot confirms the successful creation of a new user account through the registration endpoint, displaying the API response that validates successful user data processing and database storage.
-
----
-
-**Figure 4: User Login Endpoint**
-
-![User Login Endpoint Configuration](../screenshots/login-endpoint.png)
-
-This screenshot presents the login endpoint interface, demonstrating the authentication system's availability and proper configuration within the Django REST Framework Browsable API.
-
----
-
-**Figure 5: Django Views Configuration**
-
-![Django Views Configuration](../screenshots/django_views_configuration.png)
-
-This screenshot shows the Django views implementation, demonstrating how API endpoints are configured to handle incoming requests. It illustrates the backend logic for processing user requests and generating appropriate responses.
-
----
-
-**Figure 6: Chat API Endpoint**
-
-![Chat API Endpoint Configuration](../screenshots/django_chat_endpoint_test.png)
-
-This screenshot displays the Chat API endpoint configuration in Django views, showing how user messages are received and prepared for processing by the Llama 3.1 model through the Groq API.
-
----
-
-### 9.2 AI Integration Implementation
-
-**Figure 7: ChatView API Integration**
-
-![ChatView API Integration](../screenshots/chatview_api_integration.png)
-
-This screenshot displays the integration of the Chat API endpoint with Groq API configuration. It shows how user messages are routed through the API and prepared for processing by the Llama 3.1 model.
-
----
-
-**Figure 8: ChatView Response Logic**
-
-![ChatView Response Logic](../screenshots/chatview_response_logic.png)
-
-This screenshot demonstrates the response generation logic in the chat view, showing how AI-generated responses from the Llama 3.1 model are processed and formatted before being returned to the frontend.
-
----
-
-**Figure 9: LLM API Response Success**
-
-![LLM API Response Success](../screenshots/llm_api_response_success.png)
-
-This screenshot confirms successful API response generation from the Groq API with Llama 3.1 model, displaying the JSON response structure returned by the backend endpoints. It validates that the AI integration is properly configured and returning expected data formats.
-
----
-
-### 9.3 Frontend User Interface
-
-**Figure 10: Flutter Initial UI**
+**Figure 1: Flutter Initial UI**
 
 ![Flutter Initial UI](../screenshots/flutter_initial_ui.png)
 
@@ -329,7 +253,7 @@ This screenshot shows the initial Flutter Web interface when the application fir
 
 ---
 
-**Figure 11: Flutter Chat Interface Loaded**
+**Figure 2: Flutter Chat Interface Loaded**
 
 ![Flutter Chat Interface](../screenshots/chat_interface_loaded.png)
 
@@ -337,7 +261,7 @@ This screenshot shows the Flutter Web chat interface, displaying the main user-f
 
 ---
 
-**Figure 12: User Message Input**
+**Figure 3: User Message Input**
 
 ![User Message Input](../screenshots/flutter_chat_message_input.png)
 
@@ -345,7 +269,7 @@ This screenshot captures the moment when a user enters a message in the chat int
 
 ---
 
-**Figure 13: Flutter-Django Connection Success**
+**Figure 4: Flutter-Django Connection Success**
 
 ![Flutter Django Connection Success](../screenshots/flutter_django_connection_success.png)
 
@@ -353,35 +277,77 @@ This screenshot demonstrates successful communication between the Flutter Web fr
 
 ---
 
-### 9.4 Backend Administration
+### 9.2 Backend API Development
 
-**Figure 14: Django Administration Login Page**
+**Figure 5: Hello API Endpoint**
 
-![Django Admin Login Interface](../screenshots/admin-login.png)
+![Hello API Test Endpoint](../screenshots/hello-api1.png)
 
-This screenshot displays the Django Administration panel login page, providing access to the backend management interface where user accounts and database records can be verified and managed.
-
----
-
-**Figure 15: Django Administration Dashboard**
-
-![Django Admin Dashboard](../screenshots/admin-dashboard.png)
-
-This screenshot shows the Django Administration dashboard overview, displaying the available models and management features, confirming proper Django setup and database integration.
+This screenshot demonstrates the test `/hello/` endpoint returning a successful JSON response through the Django REST Framework Browsable API interface, confirming proper API configuration and response formatting.
 
 ---
 
-**Figure 16: User Verification in Database**
+**Figure 6: User Registration Request**
 
-![Users List in Admin Dashboard](../screenshots/users-list.png)
+![User Registration Request Form](../screenshots/register-request.png)
 
-This screenshot provides confirmation that registered users are properly stored in the database, showing the user list in the Django Administration panel with verified user account records.
+This screenshot shows the registration endpoint form in the Django REST Framework Browsable API, displaying the interface for submitting user registration requests with required fields for account creation.
 
 ---
 
-### 9.5 Chat API Testing
+**Figure 7: Successful User Registration**
 
-**Figure 17: Chat API Request**
+![Successful User Registration Response](../screenshots/register-success.png)
+
+This screenshot confirms the successful creation of a new user account through the registration endpoint, displaying the API response that validates successful user data processing and database storage.
+
+---
+
+**Figure 8: User Login Endpoint**
+
+![User Login Endpoint Configuration](../screenshots/login-endpoint.png)
+
+This screenshot presents the login endpoint interface, demonstrating the authentication system's availability and proper configuration within the Django REST Framework Browsable API.
+
+---
+
+### 9.3 Django Backend Configuration
+
+**Figure 9: Django Views Configuration**
+
+![Django Views Configuration](../screenshots/django_views_configuration.png)
+
+This screenshot shows the Django views implementation, demonstrating how API endpoints are configured to handle incoming requests. It illustrates the backend logic for processing user requests and generating appropriate responses.
+
+---
+
+**Figure 10: Chat API Endpoint Configuration**
+
+![Chat API Endpoint Configuration](../screenshots/django_chat_endpoint_test.png)
+
+This screenshot displays the Chat API endpoint configuration in Django views, showing how user messages are received and prepared for processing by the Llama 3.1 model through the Groq API.
+
+---
+
+### 9.4 Chat Processing Implementation
+
+**Figure 11: ChatView API Integration**
+
+![ChatView API Integration](../screenshots/chatview_api_integration.png)
+
+This screenshot displays the integration of the Chat API endpoint with Groq API configuration. It shows how user messages are routed through the API and prepared for processing by the Llama 3.1 model.
+
+---
+
+**Figure 12: ChatView Response Logic**
+
+![ChatView Response Logic](../screenshots/chatview_response_logic.png)
+
+This screenshot demonstrates the response generation logic in the chat view, showing how AI-generated responses from the Llama 3.1 model are processed and formatted before being returned to the frontend.
+
+---
+
+**Figure 13: Chat API Request Testing**
 
 ![Chat API Request Payload](../screenshots/chat-request.png)
 
@@ -389,7 +355,7 @@ This screenshot demonstrates testing the Chat API endpoint by sending a POST req
 
 ---
 
-**Figure 18: Chat API Response**
+**Figure 14: Chat API Response**
 
 ![Chat API Response](../screenshots/chat-response.png)
 
@@ -397,15 +363,53 @@ This screenshot demonstrates the successful processing of a chat message by the 
 
 ---
 
+### 9.5 AI Integration with Groq API
+
+**Figure 15: LLM API Response Success**
+
+![LLM API Response Success](../screenshots/llm_api_response_success.png)
+
+This screenshot confirms successful API response generation from the Groq API with Llama 3.1 model, displaying the JSON response structure returned by the backend endpoints. It validates that the AI integration is properly configured and returning expected data formats.
+
+---
+
+### 9.6 Backend Administration and Data Persistence
+
+**Figure 16: Django Administration Login Page**
+
+![Django Admin Login Interface](../screenshots/admin-login.png)
+
+This screenshot displays the Django Administration panel login page, providing access to the backend management interface where user accounts and database records can be verified and managed.
+
+---
+
+**Figure 17: Django Administration Dashboard**
+
+![Django Admin Dashboard](../screenshots/admin-dashboard.png)
+
+This screenshot shows the Django Administration dashboard overview, displaying the available models and management features, confirming proper Django setup and database integration.
+
+---
+
+**Figure 18: User Verification in Database**
+
+![Users List in Admin Dashboard](../screenshots/users-list.png)
+
+This screenshot provides confirmation that registered users are properly stored in the database, showing the user list in the Django Administration panel with verified user account records.
+
+---
+
 ## Summary
 
 The screenshots above provide visual documentation of:
-- Backend API development using Django REST Framework
-- User registration and authentication system
-- Groq API integration with Llama 3.1 model for intelligent responses
-- Flutter Web frontend chat interface
-- Complete system integration and functionality
-- User interaction flow from frontend to backend AI processing
+- Frontend development: Flutter Web interface and user interaction flow
+- Backend API development: Django REST Framework endpoints for user authentication and registration
+- Backend configuration: Django views and Chat API endpoint setup
+- Chat processing: API integration with Groq API and Llama 3.1 model
+- AI integration: Groq API response generation with Llama 3.1 model
+- Data persistence: Django administration and database verification
+- Complete system integration: End-to-end workflow from Flutter frontend through Django backend to Groq AI
+- User interaction flow: Frontend UI → HTTP Request → Django Backend → Groq API → AI Response → Frontend Display
 
 These visual demonstrations confirm that all aspects of the AI Chat Application have been successfully implemented and are functioning as intended.
 
