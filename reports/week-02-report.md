@@ -5,7 +5,7 @@
 
 ## 1. Executive Summary
 
-During Week 2, significant progress was made on the AI Chat Application project, transitioning from backend API development to a fully functional full-stack implementation. The focus was on completing backend API development with Django REST Framework, integrating advanced AI capabilities through the Groq API with Llama 3.1 model, and building a responsive Flutter Web frontend. All core features were successfully implemented and tested, resulting in a working end-to-end AI chat system capable of processing user inputs, generating AI responses, and delivering them to the frontend. The team successfully bridged backend and frontend communication through HTTP requests and CORS configuration, establishing a robust foundation for further development.
+During Week 2, significant progress was made on the AI Chat Application project, transitioning from backend API development to a fully functional full-stack implementation. My focus was on completing backend API development with Django REST Framework, integrating advanced AI capabilities through the Groq API with Llama 3.1 model, and building a responsive Flutter Web frontend. All core features were successfully implemented and tested, resulting in a working end-to-end AI chat system capable of processing user inputs, generating AI responses, and delivering them to the frontend. I successfully bridged backend and frontend communication through HTTP requests and CORS configuration, establishing a robust foundation for further development.
 
 ---
 
@@ -247,7 +247,7 @@ The foundation is now solid for scaling and adding advanced features to the AI C
 
 **Figure 1: Django API Testing**
 
-![Django API Test Interface](../screenshots/02_django_api_test.png)
+![Django API Test Interface](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/hello-api1.png)
 
 This screenshot demonstrates the Django REST Framework Browsable API interface, showing successful setup of API endpoints and the interface used for testing backend functionality. The interface displays available endpoints and request/response formatting.
 
@@ -255,7 +255,7 @@ This screenshot demonstrates the Django REST Framework Browsable API interface, 
 
 **Figure 2: API Response Success**
 
-![API Response Success](../screenshots/03_api_response_success.png)
+![API Response Success](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/llm_api_response_success.png)
 
 This screenshot confirms successful API response generation, displaying the JSON response structure returned by the backend endpoints. It validates that the API is properly configured and returning expected data formats.
 
@@ -263,7 +263,7 @@ This screenshot confirms successful API response generation, displaying the JSON
 
 **Figure 3: Django Views Configuration**
 
-![Django Views Configuration](../screenshots/04_django_views_configuration.png)
+![Django Views Configuration](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/django_views_configuration.png)
 
 This screenshot shows the Django views implementation, demonstrating how API endpoints are configured to handle incoming requests. It illustrates the backend logic for processing user requests and generating appropriate responses.
 
@@ -273,7 +273,7 @@ This screenshot shows the Django views implementation, demonstrating how API end
 
 **Figure 4: ChatView API Integration**
 
-![ChatView API Integration](../screenshots/05_chatview_api_integration.png)
+![ChatView API Integration](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/chatview_api_integration.png)
 
 This screenshot displays the integration of the Chat API endpoint with Groq API configuration. It shows how user messages are routed through the API and prepared for processing by the Llama 3.1 model.
 
@@ -281,7 +281,7 @@ This screenshot displays the integration of the Chat API endpoint with Groq API 
 
 **Figure 5: ChatView Response Logic**
 
-![ChatView Response Logic](../screenshots/06_chatview_response_logic.png)
+![ChatView Response Logic](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/chatview_response_logic.png)
 
 This screenshot demonstrates the response generation logic in the chat view, showing how AI-generated responses are processed and formatted before being returned to the frontend.
 
@@ -291,7 +291,7 @@ This screenshot demonstrates the response generation logic in the chat view, sho
 
 **Figure 6: Flutter Chat Interface**
 
-![Flutter Chat Interface](../screenshots/07_flutter_chat_interface.png)
+![Flutter Chat Interface](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/chat_interface_loaded.png)
 
 This screenshot shows the Flutter Web chat interface, displaying the main user-facing UI with the chat message area and input field. The interface provides an intuitive platform for users to interact with the AI chat application.
 
@@ -299,7 +299,7 @@ This screenshot shows the Flutter Web chat interface, displaying the main user-f
 
 **Figure 7: User Message Entered**
 
-![User Message Entered](../screenshots/08_user_message_entered.png)
+![User Message Entered](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/flutter_chat_message_input.png)
 
 This screenshot captures the moment when a user enters a message in the chat interface. It demonstrates the message input functionality and the interface preparation for sending the message to the backend for processing.
 
@@ -316,49 +316,41 @@ The screenshots above provide visual documentation of:
 
 These visual demonstrations confirm that all aspects of the AI Chat Application have been successfully implemented and are functioning as intended.
 
-**Figure 4: User Login Endpoint**
+**Figure 8: Django Administration Login Page**
 
-![User Login Endpoint Configuration](../screenshots/login-endpoint.png)
-
-This screenshot presents the login endpoint interface, demonstrating the authentication system's availability and proper configuration within the Django REST Framework Browsable API.
-
----
-
-**Figure 5: Django Administration Login Page**
-
-![Django Admin Login Interface](../screenshots/admin-login.png)
+![Django Admin Login Interface](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/admin-login.png)
 
 This screenshot displays the Django Administration panel login page, providing access to the backend management interface where user accounts and database records can be verified and managed.
 
 ---
 
-**Figure 6: Django Administration Dashboard**
+**Figure 9: Django Administration Dashboard**
 
-![Django Admin Dashboard](../screenshots/admin-dashboard.png)
+![Django Admin Dashboard](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/admin-dashboard.png)
 
 This screenshot shows the Django Administration dashboard overview, displaying the available models and management features, confirming proper Django setup and database integration.
 
 ---
 
-**Figure 7: User Verification in Database**
+**Figure 10: User Verification in Database**
 
-![Users List in Admin Dashboard](../screenshots/users-list.png)
+![Users List in Admin Dashboard](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/users-list.png)
 
 This screenshot provides confirmation that registered users are properly stored in the database, showing the user list in the Django Administration panel with verified user account records.
 
 ---
 
-**Figure 8: Chat API Request**
+**Figure 11: Chat API Request**
 
-![Chat API Request Payload](../screenshots/chat-request.png)
+![Chat API Request Payload](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/chat-request.png)
 
 This screenshot demonstrates testing the Chat API endpoint by sending a POST request containing a JSON message payload.
 
 ---
 
-**Figure 9: Chat API Response**
+**Figure 12: Chat API Response**
 
-![Chat API Response](../screenshots/chat-response.png)
+![Chat API Response](file:///C:/Users/lenovo/OneDrive/ScaleX-Internship/screenshots/chat-response.png)
 
 This screenshot demonstrates the successful processing of a chat message by the backend and the JSON response returned by the Chat API endpoint.
 
