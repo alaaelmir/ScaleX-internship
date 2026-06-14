@@ -56,9 +56,9 @@ The primary objectives for Week 2 were:
 - Tested various input scenarios to ensure response quality
 
 #### Chat Processing Logic
-- Developed backend logic to receive user messages
-- Process messages through the Llama 3.1 model
-- Return generated responses to the frontend in structured JSON format
+- Developed backend logic to receive user messages.
+- Processed messages through the Llama 3.1 model.
+- Returned generated responses to the frontend in structured JSON format.
 
 ### 3.3 Frontend Development
 
@@ -191,11 +191,69 @@ The primary objectives for Week 2 were:
 
 ---
 
+## 6.1 LangGraph Agentic Workflow
+
+### Objective
+Implement an agentic workflow using LangGraph and integrate it into the existing AI Chat Application backend.
+
+### Implementation
+- Installed and configured LangGraph.
+- Created a workflow using StateGraph.
+- Implemented:
+  - Router Agent
+  - Coding Agent
+  - General Agent
+- Implemented conditional routing using LangGraph conditional edges.
+- Router Agent analyzes the user's message and selects the appropriate specialized agent.
+- Coding Agent handles programming and technical questions.
+- General Agent handles general-purpose questions.
+- Integrated the workflow into the Django ChatView endpoint.
+
+### Architecture
+User Message
+      │
+      ▼
+ Router Agent
+   /       \
+  ▼         ▼
+Coding    General
+ Agent      Agent
+      \    /
+       ▼  ▼
+     Response
+
+### Testing and Validation
+- Successfully tested through the Django REST Framework interface.
+- Verified routing for coding-related requests.
+- Verified routing for general knowledge requests.
+- Confirmed successful HTTP 200 OK responses.
+- Confirmed successful integration with the Groq API and Llama 3.1 model.
+
+### Results
+
+- LangGraph workflow compiled successfully.
+- Router Agent correctly classified requests.
+- Coding Agent and General Agent responded correctly.
+- Multi-agent workflow operated successfully.
+- Django API integration functioned correctly.
+- Successfully integrated LangGraph routing into the existing Django Chat API without modifying the frontend architecture.
+
+### Learning Outcomes
+- LangGraph fundamentals
+- StateGraph architecture
+- Conditional routing
+- Agent orchestration
+- Multi-agent workflow design
+- Integration of LangGraph with Django REST Framework
+
+---
+
 ## 7. Technologies Used
 
 | Component | Technology | Version |
 |-----------|-----------|---------|
-| **Backend Framework** | Django | 5.x |
+| **Backend Framework** | Django | 6.0.6 |
+| **Agent Framework** | LangGraph | Latest |
 | **API Framework** | Django REST Framework (DRF) | 3.x |
 | **Frontend Framework** | Flutter Web | 3.x |
 | **Programming Language (Backend)** | Python | 3.x |
@@ -217,6 +275,13 @@ During Week 2, I successfully developed a complete AI Chat Application with inte
 - **AI Integration**: Integrated the Groq API with the Llama 3.1 model for AI-powered chat responses
 - **Frontend Development**: Built a Flutter Web interface for user interaction with the backend
 - **Full-Stack Integration**: Connected frontend and backend components with proper HTTP communication and CORS configuration
+
+A LangGraph-based multi-agent workflow was successfully implemented using:
+- Router Agent
+- Coding Agent
+- General Agent
+
+and the workflow was integrated into the Django Chat API.
 
 All core functionality has been tested and verified. The application provides a working foundation for user authentication, chat interface, and AI-powered responses.
 
@@ -399,6 +464,22 @@ This screenshot provides confirmation that registered users are properly stored 
 
 ---
 
+**Figure 19: LangGraph Workflow Execution**
+
+![LangGraph Workflow Execution](../screenshots/Workflow%20Routing%20Test.png)
+
+This screenshot demonstrates the successful execution of the LangGraph workflow, showing the agentic routing architecture and workflow operation within the Django backend.
+
+---
+
+**Figure 20: LangGraph Chat API Response Test**
+
+![LangGraph Chat API Response Test](../screenshots/Chat%20Endpoint%20Test.png)
+
+This screenshot demonstrates successful testing of the LangGraph-integrated Chat API endpoint through the Django REST Framework interface, including an AI-generated response and HTTP 200 OK status.
+
+---
+
 ## Summary
 
 The screenshots above provide visual documentation of:
@@ -408,6 +489,7 @@ The screenshots above provide visual documentation of:
 - Chat processing: API integration with Groq API and Llama 3.1 model
 - AI integration: Groq API response generation with Llama 3.1 model
 - Data persistence: Django administration and database verification
+- LangGraph agentic workflow implementation with Router Agent, Coding Agent, and General Agent.
 - Complete system integration: End-to-end workflow from Flutter frontend through Django backend to Groq AI
 - User interaction flow: Frontend UI → HTTP Request → Django Backend → Groq API → AI Response → Frontend Display
 
